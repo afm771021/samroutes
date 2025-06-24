@@ -1,0 +1,7 @@
+<p>about works1!</p>
+
+<input *ngIf="visible" type="text" [(ngModel)]="about">
+<button *ngIf="visible" (click)="addUser()">Agregar usuario</button>
+{{about}}
+
+<div *ngFor="let usuario of usuarios"> {{ usuario }} </div>
