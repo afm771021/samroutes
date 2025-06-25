@@ -1,4 +1,4 @@
-// app.module.ts
+// app.module.tsEN
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
