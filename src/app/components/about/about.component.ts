@@ -1,4 +1,4 @@
-/*Antonio Fernandez*/
+/*Antonio Fernandez 1.0.0 hf1 */
 
 import { Component, OnInit } from '@angular/core';
 
