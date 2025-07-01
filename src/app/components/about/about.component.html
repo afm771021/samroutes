@@ -8,5 +8,6 @@
 <div *ngFor="let usuario of usuarios"> {{ usuario }} </div>
 
 <ul *ngFor="let pez of peces">
-  <li> {{pez}} </li>
+  <li [ngStyle]="{'color': pez === 'Tetra congo' ?'red' : 'black'}">{{pez}}</li>
+  <li [ngClass]="{'selected': true,'blue': pez !== 'Tetra neon'}"> {{pez}} </li>
 </ul>
