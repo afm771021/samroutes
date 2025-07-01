@@ -9,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   usuarios = ['Antonio', 'Maximiliano'];
+  peces = ['Tetra congo','Tetra neon','Tetra emperador'];
 
   about = "Nombre";
+  apellido!: string;
   visible = false;
 
   constructor() {

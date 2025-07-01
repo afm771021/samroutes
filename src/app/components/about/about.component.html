@@ -1,7 +1,13 @@
 <p>about works1!</p>
-
+<p>apellido:{{apellido}}</p>
 <input *ngIf="visible" type="text" [(ngModel)]="about">
+<input type="text" [(ngModel)]="apellido">
 <button *ngIf="visible" (click)="addUser()">Agregar usuario</button>
 {{about}}
 
 <div *ngFor="let usuario of usuarios"> {{ usuario }} </div>
+
+<ul *ngFor="let pez of peces">
+  <li [ngStyle]="{'color': pez === 'Tetra congo' ?'red' : 'black'}">{{pez}}</li>
+  <li [ngClass]="{'selected': true,'blue': pez !== 'Tetra neon'}"> {{pez}} </li>
+</ul>
