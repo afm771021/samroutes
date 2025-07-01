@@ -1,6 +1,7 @@
 <p>about works1!</p>
-
+<p>apellido:{{apellido}}</p>
 <input *ngIf="visible" type="text" [(ngModel)]="about">
+<input type="text" [(ngModel)]="apellido">
 <button *ngIf="visible" (click)="addUser()">Agregar usuario</button>
 {{about}}
 

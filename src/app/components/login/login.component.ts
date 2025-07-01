@@ -23,6 +23,11 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  logout()
+  {
+    this.auth.logout();
+  }
+
   getData() {
     this.api.getProtectedData().subscribe({
       next: data => alert(data),

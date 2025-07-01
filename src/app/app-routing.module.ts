@@ -5,10 +5,11 @@ import {AboutComponent} from "./components/about/about.component";
 import {LoginComponent} from "./components/login/login.component";
 import {DatosComponent} from "./components/datos/datos.component";
 import {NombreDelComponenteComponent} from "./components/nombre-del-componente/nombre-del-componente.component";
+import {AuthGuard} from "./auth.guard";
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
-  {path:'about',component:AboutComponent},
+  {path:'about',component:AboutComponent, canActivate: [AuthGuard]},
   { path:'login',component:LoginComponent},
   { path:'datos', component:DatosComponent},
   { path:'standalone', component:NombreDelComponenteComponent},

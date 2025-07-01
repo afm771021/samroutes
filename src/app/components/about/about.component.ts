@@ -11,6 +11,7 @@ export class AboutComponent implements OnInit {
   usuarios = ['Antonio', 'Maximiliano'];
 
   about = "Nombre";
+  apellido!: string;
   visible = false;
 
   constructor() {
